@@ -9,8 +9,8 @@ public class task2 {
     public static int calc(float[] c, int r, float[] p) {
         //distance = sqrt{(Xc - Xp)^2 + (Yc - Yp)^2}
         float dist = (float) Math.sqrt(Math.pow((c[0] - p[0]), 2) +
-                Math.pow((c[1] - p[0]), 2));
-        if(dist == 0) return 0; //on
+                Math.pow((c[1] - p[1]), 2));
+        if(dist == r) return 0; //on
         if(dist < r) return 1;  //in
         return 2;               //out
     }
