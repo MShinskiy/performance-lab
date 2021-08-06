@@ -2,7 +2,7 @@
 
 public class task1 {
 
-    public static int path(int n, int m){
+    public static long path(int n, int m){
         //initialize
         String res = "";    //result path string
         int p = 1;          //pointer
@@ -18,7 +18,7 @@ public class task1 {
             p--;    //tuples begin and finish on the same number
         }while(p != 1);
 
-        return Integer.parseInt(res);
+        return Long.parseLong(res);
     }
 
     public static void main(String[] args) {
